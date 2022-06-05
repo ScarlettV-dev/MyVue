@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <!-- <v-row>
     <v-col class="text-center">
       <img
         src="/v.png"
@@ -15,11 +15,11 @@
         </footer>
       </blockquote>
     </v-col>
-  </v-row>
+  </v-row> -->
 </template>
 
 <script>
-export default {
-  name: 'InspirePage'
-}
+// export default {
+//   name: 'InspirePage'
+// }
 </script>
