@@ -1,28 +1,15 @@
 <template>
   <section class="pc-games">
-   <Game
-     pic="https://www.gamespot.com/a/uploads/scale_landscape/1587/15875866/3578797-borderlands-3-review-thumb-nologo.jpg"
-     title="Borderlands 3"
-     id="1"
-     description="First Person Shooter"/>
+   <Game v-for="game in games"
+     :pic=game.pic
+     :title=game.title
+     :id=game.id
+     :description=game.description
+     :key="game.id" />
 
-     <Game
-     pic="ori.jpeg"
-     title="Ori and the Blind Forest"
-     id="2"
-     description="Adventure Game"/>
+     
 
-     <Game
-     pic="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiketendo64.com%2Fwp-content%2Fuploads%2F2019%2F04%2FH2x1_NSwitchDS_Cuphead_image1600w.jpg&imgrefurl=https%3A%2F%2Fmiketendo64.com%2F2019%2F04%2F18%2Fswitch-review-cuphead%2F&tbnid=zxFzpkMmuUBH0M&vet=12ahUKEwixybeA75b4AhXho3IEHUo0BzwQMygOegUIARD4AQ..i&docid=QsKC8NdsEUYHGM&w=1600&h=800&q=cuphead&ved=2ahUKEwixybeA75b4AhXho3IEHUo0BzwQMygOegUIARD4AQ"
-     title="Cuphead"
-     id="3"
-     description="Adventure Game"/>
-
-     <Game
-     pic="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F7%2F7f%2FSims4_Rebrand.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Sims_4&tbnid=NRlYhzhtIfN1AM&vet=12ahUKEwitn-am75b4AhXvrHIEHRX2DWkQMygDegUIARDfAQ..i&docid=jxctw9qHOXVAJM&w=258&h=387&q=sims%204&ved=2ahUKEwitn-am75b4AhXvrHIEHRX2DWkQMygDegUIARDfAQ"
-     title="The Sims 4"
-     id="4"
-     description="Social Simulation"/>
+    
 
   </section>
 </template>
@@ -33,7 +20,17 @@
   export default{
     components:{
       Game
-    }
+    },
+    data() {
+      return {
+        games: [
+          {pic:"https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-hero-marge-220325-ftue-base-game-xl.jpg.adapt.1920w.jpg",title:"The Sims 4",id:"4", description:"Social Simulation"},
+          {pic:"cuphead.png",title:"Cuphead",id:"3", description:"Adventure Game"},
+          {pic:"ori.jpeg",title:"Ori and the Blind Forest",id:"2", description:"Adventure Game"},
+          {pic:"https://www.gamespot.com/a/uploads/scale_landscape/1587/15875866/3578797-borderlands-3-review-thumb-nologo.jpg",title:"Borderlands 3",id:"1", description:"First Person Shooter"}
+        ]
+      }
+    },
   }
 </script>
 
