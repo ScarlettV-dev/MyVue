@@ -1,7 +1,7 @@
 <template>
   <section class="pc-games">
    <Game
-     pic="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Fp%2Fborderlands-3&psig=AOvVaw3dCrrBHzuJ-8JrT269rwrO&ust=1654533336276000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJC8oJfflvgCFQAAAAAdAAAAABAD"
+     pic="https://www.gamespot.com/a/uploads/scale_landscape/1587/15875866/3578797-borderlands-3-review-thumb-nologo.jpg"
      title="Borderlands 3"
      id="1"
      description="First Person Shooter"/>
