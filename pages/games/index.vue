@@ -2,7 +2,7 @@
   <section class="pc-games">
     <v-btn @click="add" class="error">ADD</v-btn>
 
-   <Game v-for="[index,game] in games.entries()"
+   <Game v-for="(game,index) in games"
      :pic="game.pic"
      :title="game.title"
      :id="index"
