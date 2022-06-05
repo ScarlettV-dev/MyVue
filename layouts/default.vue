@@ -106,6 +106,16 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-microsoft-xbox-controller',
+          title: 'Games',
+          to: '/games'
+        },
+        {
+          icon: 'mdi-thought-bubble',
+          title: 'Hi',
+          to: '/hi'
         }
       ],
       miniVariant: false,
