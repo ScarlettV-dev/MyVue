@@ -3,7 +3,8 @@
     <article class="game">
       <div class="pic" :style="{backgroundImage:'url(' + pic + ')'}"></div>
         <h1>{{title}}</h1>
-        <p>{{description}}</p>
+        <p>{{description}} ID: {{id}}</p>
+
     </article>
   </NuxtLink>
 </template>
