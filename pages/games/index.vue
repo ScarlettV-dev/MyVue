@@ -1,5 +1,7 @@
 <template>
   <section class="pc-games">
+    <v-btn @click="add" class="error">ADD</v-btn>
+
    <Game v-for="[index,game] in games.entries()"
      :pic="game.pic"
      :title="game.title"
@@ -7,7 +9,6 @@
      :description="game.description"
      :key="index" />
 
-     
 
     
 
@@ -31,6 +32,14 @@
         ]
       }
     },
+    methods: {
+      add: function() {
+        this.games.push(
+          {pic:"ori.jpeg",title:"Ori and the Blind Forest", description:"Adventure Game"},
+
+        )
+      }
+    }
   }
 </script>
 
